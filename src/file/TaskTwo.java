@@ -1,4 +1,4 @@
-// write a program which summary size all files in directory
+package file;// write a program which summary size all files in directory
 
 import java.io.File;
 import java.io.FilenameFilter;
