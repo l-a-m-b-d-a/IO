@@ -17,7 +17,7 @@ public class FileExample2 {
         };
     }
     public static void main(final String[] args) {
-        File path = new File("src");
+        File path = new File("src/file");
         String[] names;
         if (args.length != 0) {
             names = path.list(dirFilter(args[0]));
