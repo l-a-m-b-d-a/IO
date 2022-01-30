@@ -10,6 +10,7 @@ public class Student extends Human implements Serializable {
         this.group = group;
     }
 
+
     public Group getGroup() {
         return group;
     }

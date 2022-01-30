@@ -1,6 +1,6 @@
 package objectfile;
 
-import java.io.Serializable;
+import java.io.*;
 
 public class Group implements Serializable {
     private int numberGroup;
@@ -13,6 +13,18 @@ public class Group implements Serializable {
         this.idGroup = idGroup;
         this.averageBall = averageBall;
     }
+// if we need use transient
+//    @Serial
+//    private void writeObject(ObjectOutputStream oos) throws IOException {
+//        oos.defaultWriteObject();
+//        oos.writeInt(idGroup);
+//    }
+//
+//    @Serial
+//    private void readObject(ObjectInputStream ois) throws IOException, ClassNotFoundException {
+//        ois.defaultReadObject();
+//        idGroup = ois.readInt();
+//    }
 
     @Override
     public String toString() {
